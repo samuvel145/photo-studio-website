@@ -5,10 +5,8 @@ import { Footer } from '@/components/layout/Footer';
 import { Gallery } from '@/pages/Gallery';
 import { Home } from '@/pages/Home';
 import { Contact } from '@/pages/Contact';
-
-// Placeholder components for other routes
-const Services = () => <div className="pt-24 text-center min-h-screen">Services Page Coming Soon</div>;
-const About = () => <div className="pt-24 text-center min-h-screen">About Page Coming Soon</div>;
+import { About } from '@/pages/About';
+import { Services } from '@/pages/Services';
 
 function App() {
   return (

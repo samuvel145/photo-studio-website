@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Calendar, User, Mail, Phone } from 'lucide-react';
+import { Calendar, User, Mail, Phone, Sparkles } from 'lucide-react';
 import { inquirySchema, type InquiryFormData } from '@/lib/schemas';
 import { Input } from '@/components/common/Input';
 import { Button } from '@/components/common/Button';
@@ -13,6 +13,7 @@ import { useToast } from '@/hooks/useToast';
 
 export function InquiryForm() {
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isBooked, setIsBooked] = useState(false);
 
     const { showToast } = useToast();
 
@@ -31,6 +32,7 @@ export function InquiryForm() {
         try {
             await api.submitInquiry(data);
             showToast('Inquiry received successfully! We will contact you shortly.', 'success');
+            setIsBooked(true);
             reset();
         } catch (error) {
             showToast('Something went wrong. Please try again later.', 'error');
@@ -38,6 +40,23 @@ export function InquiryForm() {
             setIsSubmitting(false);
         }
     };
+
+    if (isBooked) {
+        return (
+            <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg border border-gray-100 text-center animate-fade-in">
+                <div className="w-20 h-20 bg-primary-light rounded-full flex items-center justify-center text-primary-dark mx-auto mb-6">
+                    <Sparkles className="w-10 h-10" />
+                </div>
+                <h3 className="text-3xl font-heading font-bold text-text-main mb-4">Booked!</h3>
+                <p className="text-text-body mb-8">
+                    Thank you for your inquiry. We have received your details and will get back to you within 24 hours to confirm your session.
+                </p>
+                <Button variant="outline" onClick={() => setIsBooked(false)}>
+                    Submit Another Inquiry
+                </Button>
+            </div>
+        );
+    }
 
     return (
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg border border-gray-100">

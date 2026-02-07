@@ -56,4 +56,28 @@ export const galleryData: GalleryItem[] = [
         category: 'Kids',
         alt: 'Girl smiling in garden',
     },
+    {
+        id: '9',
+        src: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=800&auto=format&fit=crop',
+        category: 'Newborn',
+        alt: 'Newborn sleeping peacefully',
+    },
+    {
+        id: '10',
+        src: 'https://images.unsplash.com/photo-1531983412531-1f49a365f698?q=80&w=800&auto=format&fit=crop',
+        category: 'Family',
+        alt: 'Family playing on the beach',
+    },
+    {
+        id: '11',
+        src: 'https://images.unsplash.com/photo-1476703993599-0035a21b17a9?q=80&w=800&auto=format&fit=crop',
+        category: 'Maternity',
+        alt: 'Maternity silhouette at sunset',
+    },
+    {
+        id: '12',
+        src: 'https://images.unsplash.com/photo-1502781252888-9143ba7f074e?q=80&w=800&auto=format&fit=crop',
+        category: 'Kids',
+        alt: 'Brother and sister laughing',
+    },
 ];
