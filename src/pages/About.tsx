@@ -8,7 +8,7 @@ export function About() {
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="/assets/images/mat1.png"
+                        src="/assets/images/maternity-hero.jpg"
                         alt="Graceful maternity silhouette"
                         className="w-full h-full object-cover opacity-20"
                     />
@@ -57,7 +57,7 @@ export function About() {
                         className="rounded-2xl overflow-hidden shadow-2xl bg-gray-100 min-h-[400px]"
                     >
                         <img
-                            src="/assets/images/mat2.png"
+                            src="/assets/images/maternity-passion.png"
                             alt="Beautiful maternity portrait"
                             className="w-full h-full object-cover"
                         />
