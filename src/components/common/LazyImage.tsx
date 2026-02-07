@@ -49,7 +49,7 @@ export function LazyImage({
     return (
         <div
             ref={imageRef}
-            className={cn("relative overflow-hidden bg-gray-100", className)}
+            className={cn("relative overflow-hidden bg-gray-100 h-full", className)}
         >
             {/* Placeholder / Skeleton */}
             {(!isLoaded || hasError) && (

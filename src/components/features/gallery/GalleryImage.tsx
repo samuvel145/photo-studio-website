@@ -22,7 +22,7 @@ export function GalleryImage({ item, onClick }: GalleryImageProps) {
             <LazyImage
                 src={item.src}
                 alt={item.alt}
-                className="transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full transition-transform duration-500 group-hover:scale-110"
                 threshold={200}
             />
 

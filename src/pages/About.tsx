@@ -8,7 +8,7 @@ export function About() {
             <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?q=80&w=1920&auto=format&fit=crop"
+                        src="https://images.unsplash.com/photo-1559732168-7517c6674395?q=80&w=1920&auto=format&fit=crop"
                         alt="Graceful maternity silhouette"
                         className="w-full h-full object-cover opacity-20"
                     />
@@ -54,12 +54,12 @@ export function About() {
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="rounded-2xl overflow-hidden shadow-2xl"
+                        className="rounded-2xl overflow-hidden shadow-2xl bg-gray-100 min-h-[400px]"
                     >
                         <img
-                            src="https://images.unsplash.com/photo-1504194553283-d731e21b1834?q=80&w=1000&auto=format&fit=crop"
+                            src="https://images.unsplash.com/photo-1510154221556-06256b365992?q=80&w=1000&auto=format&fit=crop"
                             alt="Beautiful maternity portrait"
-                            className="w-full h-auto"
+                            className="w-full h-full object-cover"
                         />
                     </motion.div>
                 </div>
